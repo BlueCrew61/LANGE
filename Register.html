@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<style>
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(#5a7684,#3f5a6b);
+    font-family:Arial;
+}
+.container {
+    width:250px;
+    text-align:center;
+    color:white;
+}
+.card {
+    background:#ddd;
+    border-radius:20px;
+    padding:15px;
+}
+input {
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+    border:none;
+    border-radius:10px;
+}
+button {
+    background:red;
+    color:white;
+    border:none;
+    padding:8px;
+    border-radius:20px;
+}
+a { color:red; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>CREATE ACCOUNT</h2>
+
+<div class="card">
+<form action="register.php" method="POST">
+    <input type="text" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Sign up</button>
+</form>
+</div>
+
+<p>Sudah punya akun? <a href="login.html">Login</a></p>
+</div>
+
+</body>
+</html>
